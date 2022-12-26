@@ -1,0 +1,58 @@
+body
+{
+    background: rgb(121,158,211);
+    /*background: linear-gradient(0deg, rgba(121,158,211,1) 9%, rgba(60,67,161,1) 47%, rgba(29,47,149,1) 82%);*/
+   
+    margin: 0;
+    padding: 0;
+}
+
+
+.text{
+  background-image: url(https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGR2YW5nb2doLXNudmdyb2IuanBn.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+
+    text-align: center;
+    height: 100px;
+    color: #000000;
+
+}
+.text h2{
+    margin: 0;
+    line-height: 100px;
+    font-size: 48px;
+}
+
+
+.nav{
+    background:#1d2f95 ;
+    color: rgb(255, 255, 255);
+    display: flex
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+}
+ul li{
+    padding: 20px;
+    list-style: none
+}
+ul li a{
+    color: #daca2f	;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.pictures {
+
+   text-align: center;
+    margin: auto;
+}

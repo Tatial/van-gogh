@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Example</title>
+  <link rel="stylesheet" href="quiz.css">
+  
+  <script src="quiz.js"></script>
+
+</head>
+
+
+
+  <body onLoad="populate()"> 
+  <form name="personalityForm"> 
+  <div class="wrapper container">  
+  
+    
+    <div class="page-header">
+      <h1> which painter are you ? </h1>
+    </div>
+  
+  
+    <div class="quiz-box quiz-1">  
+      <h2 class="quiz-question">1. What is your favorite colour?</h2>
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q1" onClick="saver(1,0)">Yellow</label>
+        <label><input type="radio" name="q1" onClick="saver(1,1)">Black</label>
+        <label><input type="radio" name="q1" onClick="saver(1,2)">Purple</label>
+        <label><input type="radio" name="q1" onClick="saver(1,3)">Red</label>
+        <label><input type="radio" name="q1" onClick="saver(1,4)">Green</label>
+      </span>  
+    </div>  
+  
+    
+    <div class="quiz-box quiz-2">  
+      <h2 class="quiz-question">2. What is your favorite art period?</h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q2" onClick="saver(2,0)">pintillism</label>
+        <label><input type="radio" name="q2" onClick="saver(2,1)">Surrealism</label>
+        <label><input type="radio" name="q2" onClick="saver(2,2)">Cubism </label>
+        <label><input type="radio" name="q2" onClick="saver(2,3)">Modern art</label>
+        <label><input type="radio" name="q2" onClick="saver(2,4)">Impressionism</label>
+      </span>  
+    </div>  
+  
+    
+    <div class="quiz-box quiz-3">   
+      <h2 class="quiz-question">3. pick a flower </h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q3" onClick="saver(3,0)">sunflower</label> 
+        <label><input type="radio" name="q3" onClick="saver(3,1)">daisy</label> 
+        <label><input type="radio" name="q3" onClick="saver(3,2)">cactus</label> 
+        <label><input type="radio" name="q3" onClick="saver(3,3)">Rose </label> 
+        <label><input type="radio" name="q3" onClick="saver(3,4)">Water Lilies</label> 
+      </span>  
+    </div> 
+  
+  
+    <div class="quiz-box quiz-4">    
+      <h2 class="quiz-question">4. What is your favorite type of medium?</h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q4" onClick="saver(4,0)">prints</label> 
+        <label><input type="radio" name="q4" onClick="saver(4,1)">Sculprute</label> 
+        <label><input type="radio" name="q4" onClick="saver(4,2)">charcoal</label> 
+        <label><input type="radio" name="q4" onClick="saver(4,3)">oil paint</label> 
+        <label><input type="radio" name="q4" onClick="saver(4,4)">pastels</label>
+      </span>  
+    </div> 
+  
+  
+    <div class="quiz-box quiz-5">    
+      <h2 class="quiz-question">5. choose an art style</h2>
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q5" onClick="saver(5,0)">Pointillism</label> 
+        <label><input type="radio" name="q5" onClick="saver(5,1)">Surrealism</label> 
+        <label><input type="radio" name="q5" onClick="saver(5,2)">structure</label> 
+        <label><input type="radio" name="q5" onClick="saver(5,3)">portret</label> 
+        <label><input type="radio" name="q5" onClick="saver(5,4)">landscape</label> 
+      </span>  
+    </div> 
+  
+  
+    <div class="quiz-box quiz-6">    
+      <h2 class="quiz-question">6. What is your least favorite color </h2>
+      <span class="quiz-answer">
+        <label><input type="radio" name="q6" onClick="saver(6,0)">red</label> 
+        <label><input type="radio" name="q6" onClick="saver(6,1)">pink</label> 
+        <label><input type="radio" name="q6" onClick="saver(6,2)">grey</label> 
+        <label><input type="radio" name="q6" onClick="saver(6,3)">orange </label> 
+        <label><input type="radio" name="q6" onClick="saver(6,4)">black</label> 
+      </span>  
+    </div> 
+  
+  
+    <div class="quiz-box quiz-7">   
+      <h2 class="quiz-question">7. How do you feel about abstract art?</h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q7" onClick="saver(7,0)">I like some of it</label> 
+        <label><input type="radio" name="q7" onClick="saver(7,1)">I love it</label> 
+        <label><input type="radio" name="q7" onClick="saver(7,2)">It's a great means of expression</label> 
+        <label><input type="radio" name="q7" onClick="saver(7,3)">I don't like it</label> 
+        <label><input type="radio" name="q7" onClick="saver(7,4)">It's a little out there for me</label> 
+      </span>  
+    </div>  
+  
+  
+    <div class="quiz-box quiz-8">  
+      <h2 class="quiz-question">8.When is the last time you visited a museum?</h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q8" onClick="saver(8,0)">It was less than a month ago.</label> 
+        <label><input type="radio" name="q8" onClick="saver(8,1)">It was online</label> 
+        <label><input type="radio" name="q8" onClick="saver(8,2)">It was probably a few years ago.</label> 
+        <label><input type="radio" name="q8" onClick="saver(8,3)">I have never been to a museum</label> 
+        <label><input type="radio" name="q8" onClick="saver(8,4)">I can't remember</label>
+      </span>  
+    </div>  
+  
+  
+    <div class="quiz-box quiz-9">    
+      <h2 class="quiz-question">9. Other than painting, what art form do you like?</h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="q9" onClick="saver(9,0)">mosaic</label> 
+        <label><input type="radio" name="q9" onClick="saver(9,1)">Digital art</label> 
+        <label><input type="radio" name="q9" onClick="saver(9,2)">potery</label> 
+        <label><input type="radio" name="q9" onClick="saver(9,3)">photography</label>
+        <label><input type="radio" name="q9" onClick="saver(9,4)">Music</label> 
+      </span>  
+    </div>  
+  
+  
+    <div class="quiz-box quiz-10">    
+      <h2 class="quiz-question">10. What is your favorite type of paint?<h2> 
+      <span class="quiz-answer"> 
+        <label><input type="radio" name="10" onClick="saver(10,0)">Oil paint</label> 
+        <label><input type="radio" name="10" onClick="saver(10,1)">I don't have a preference</label> 
+        <label><input type="radio" name="10" onClick="saver(10,2)">Acrilic</label> 
+        <label><input type="radio" name="10" onClick="saver(10,3)">Gouache</label>
+        <label><input type="radio" name="10" onClick="saver(10,4)">watercolor</label> 
+      </span>  
+    </div>    
+    
+    
+    <hr>  
+  
+    
+    <div class="get-result">   
+      <input class="btn btn-primary" type="button" name="result" value="Submit" onClick="total()"> 
+      <input class="btn btn-default" type="reset" value="Reset"> 
+    </div> 
+  
+    
+    <hr>   
+    
+    
+    <div class="result-box">   
+      <h3>You are: </h3>
+      <div id="result"></div> 
+    </div>
+      
+    
+  </div><!-- /.container -->    
+  </form> 
+
+
+</body>
+
+
+</html>
